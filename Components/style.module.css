@@ -1,0 +1,16 @@
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 2s infinite;
+}
+/* Components/style.module.css */
+
+/* Light mode styles */
+/* styles/ServiceCard.module.css */
