@@ -15,22 +15,16 @@ export default function Services() {
     }, []);
 
     return (
-        <div className={showContent ? "transition-opacity duration-1000 ease-in opacity-100" : "opacity-0"}>
+        <div >
             <div className="relative">
                 <div className="absolute inset-0" style={{ backgroundImage: `url("/images/home.jpg")`, backgroundSize: 'cover' }}></div>
+                <div className={showContent ? "transition-opacity duration-1000 ease-in opacity-100" : "opacity-0"}>
                 <div className="relative bg-gradient-to-b from-black flex flex-col h-screen">
-                    <div className="text-white ml-12 mt-16 md:mt-32 rounded-lg">
+                    <div className="text-white ml-12 mt-16 md:mt-48 rounded-lg">
                         <h2 className='text-6xl text-green-500 mb-4 font-mono'>
                             SandBox Software Company, <br /> <span className='text-4xl text-white'>Unlocking Infinite Possibilities</span>
                         </h2>
-                        <div className="relative">
-                            <input
-                                type="text"
-                                className={`text-2xl bg-transparent border-none focus:outline-none ${styles.typewriterInput}`}
-                                readOnly
-                            />
-                            <div className={`absolute right-0 mr-4 top-1/2 transform -translate-y-1/2 ${styles.cursor}`}></div>
-                        </div>
+                        
                         {showContent && (
                             <Typewriter className="text-2xl"
                                 options={{
@@ -51,7 +45,7 @@ export default function Services() {
                             KARIBU
                         </button>
                     </div>
-                    <div className='container mt-4 md:mt-32 bg-black rounded-2xl ml-12 py-4 px-8 w-3/4'>
+                    {/* <div className='container mt-4 md:mt-32 bg-black rounded-2xl ml-12 py-4 px-8 w-3/4'>
                         <div className='flex flex-row justify-between items-center'>
                             <h2 className='text-white'>Trusted by</h2>
                             <div className='flex flex-row items-center'>
@@ -60,7 +54,8 @@ export default function Services() {
                                 <img src="./images/trustee3.webp" alt="" className='w-10 h-10 mx-2'/>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                </div>
                 </div>
             </div>
         </div>

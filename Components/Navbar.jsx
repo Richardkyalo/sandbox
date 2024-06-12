@@ -57,25 +57,25 @@ export default function NavBar() {
             <div className={`hidden md:flex items-center space-x-6 ${navbar ? 'block' : 'hidden'}`}>
               <ul className="flex font-bold font-2xl space-x-4">
                 <li className='hover:text-green-500  cursor-pointer'>
-                  <ScrollLink to="home" smooth={true} duration={1000} onClick={toggleNavbar}>Home</ScrollLink>
+                  <ScrollLink to="home" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Home</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="services" smooth={true} duration={1000} onClick={toggleNavbar}>Services</ScrollLink>
+                  <ScrollLink to="services" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Services</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="portfolio" smooth={true} duration={1000} onClick={toggleNavbar}>Portfolio</ScrollLink>
+                  <ScrollLink to="portfolio" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Portfolio</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="testimonials" smooth={true} duration={1000} onClick={toggleNavbar}>Testimonials</ScrollLink>
+                  <ScrollLink to="testimonials" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Testimonials</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="technology" smooth={true} duration={1000} onClick={toggleNavbar}>Technologies</ScrollLink>
+                  <ScrollLink to="technology" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Technologies</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="blog" smooth={true} duration={1000} onClick={toggleNavbar}>Blog</ScrollLink>
+                  <ScrollLink to="blog" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Blog</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 cursor-pointer'>
-                  <ScrollLink to="about" smooth={true} duration={1000} onClick={toggleNavbar}>About</ScrollLink>
+                  <ScrollLink to="about" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">About</ScrollLink>
                 </li>
                 <li className='hover:text-green-500 flex flex-row items-center cursor-pointer'>
                   <Phone />

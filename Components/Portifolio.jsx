@@ -3,7 +3,7 @@ import React from 'react';
 function PortfolioItem({ image, title, title2, message, alignLeft }) {
   return (
     <div className={`flex flex-col md:flex-row ${alignLeft ? 'md:flex-row-reverse' : ''} justify-center py-8`}>
-      <div className="md:w-1/2 md:order-4">
+      <div className="md:w-full md:order-4">
         <img src={image} alt="Portfolio Item" className="w-full h-auto rounded-2xl" />
       </div>
       <div className="md:w-1/2 md:text-left px-8 md:px-12 md:order-1">
@@ -27,7 +27,7 @@ export default function Portfolio() {
       </div>
       <div className="max-w-7xl w-full mt-8">
         <PortfolioItem
-          image="/images/portfolio1.webp"
+          image="/images/Screenshot.png"
           title="Project 1"
           title2="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mauris nec turpis consectetur, eget consequat tortor placerat."

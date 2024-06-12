@@ -2,9 +2,21 @@ import React, { useState, useEffect } from 'react';
 
 const Testimonials = () => {
   const testimonials = [
-    { message: "I've been using this product for several months now, and I must say, it has truly changed my life. The results have been beyond my expectations, and I couldn't be happier with my decision to try it out.", author: "John Doe", photo: "./images/john.jpg" },
-    { message: "I cannot express enough how much I recommend this service. From start to finish, everything was seamless. The customer support was top-notch, and the final result exceeded all my expectations. 10/10 would use again!", author: "Jane Smith", photo: "./images/jane.jpg" },
-    { message: "Working with the team behind this product has been an absolute pleasure. Their professionalism, dedication, and attention to detail are unmatched. I am incredibly grateful for their hard work and would highly recommend them to anyone.", author: "Alice Johnson", photo: "./images/alice.jpg" }
+    {
+      message: "I've been using this product for several months now, and I must say, it has truly changed my life. The results have been beyond my expectations, and I couldn't be happier with my decision to try it out.",
+      author: "John Doe",
+      photo: "./images/john.jpg"
+    },
+    {
+      message: "I cannot express enough how much I recommend this service. From start to finish, everything was seamless. The customer support was top-notch, and the final result exceeded all my expectations. 10/10 would use again!",
+      author: "Jane Smith",
+      photo: "./images/jane.jpg"
+    },
+    {
+      message: "Working with the team behind this product has been an absolute pleasure. Their professionalism, dedication, and attention to detail are unmatched. I am incredibly grateful for their hard work and would highly recommend them to anyone.",
+      author: "Alice Johnson",
+      photo: "./images/alice.jpg"
+    }
   ];
 
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
@@ -51,18 +63,9 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-row space-x-4 items-center text-center '>
-      <img src="/images/icon.webp" className='fill-current hidden sm:block w-16 h-16' alt="" />
-      <div className='text-black text-green-500 hover:text-blue-500 '>
-       <p className='underline cursor-pointer'>SandBox.co.ke</p>  
-      </div>
-      <div className='border border-left border-black min-h-6'></div>
-      <div>
-        <p>Top App Developers</p>
-      </div>
-      </div>
+      
       <button
-        className="absolute left-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
+        className="absolute left-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md "
         onClick={prevTestimonial}
       >
         <svg
@@ -81,7 +84,7 @@ const Testimonials = () => {
         </svg>
       </button>
       <button
-        className="absolute md:right-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-10"
+        className="absolute md:right-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md "
         onClick={nextTestimonial}
       >
         <svg
