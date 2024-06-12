@@ -19,7 +19,7 @@ export default function Services() {
             <div className="relative">
                 <div className="absolute inset-0" style={{ backgroundImage: `url("/images/home.jpg")`, backgroundSize: 'cover' }}></div>
                 <div className={showContent ? "transition-opacity duration-1000 ease-in opacity-100" : "opacity-0"}>
-                <div className="relative bg-gradient-to-b from-black flex flex-col h-screen">
+                <div className="relative bg-gradient-to-b from-black flex flex-col md:h-screen">
                     <div className="text-white ml-12 mt-16 md:mt-48 rounded-lg">
                         <h2 className='text-2xl md:text-6xl mt-24 md:mt-12 text-green-500 mb-4 font-mono'>
                             SandBox Software Company, <br /> <span className='text-xl md:text-4xl text-white'>Unlocking Infinite Possibilities</span>
