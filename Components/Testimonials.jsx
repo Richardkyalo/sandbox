@@ -38,9 +38,11 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center relative">
-      <h1 className="text-2xl text-center font-mono mb-8">We develop enterprise-grade software solutions <br /> for businesses.</h1>
-      <div className="text-center relative">
+    <div className="h-screen flex flex-col justify-center items-center relative px-4 md:px-0">
+      <h1 className="text-2xl text-center font-mono mb-8">
+        We develop enterprise-grade software solutions <br /> for businesses.
+      </h1>
+      <div className="text-center relative w-full max-w-xl mx-auto">
         <div className="max-w-lg mx-auto">
           <blockquote className="testimonial transition-opacity duration-1000">
             &quot;{testimonials[currentTestimonialIndex].message}&quot;
@@ -63,9 +65,8 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      
       <button
-        className="absolute left-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md "
+        className="absolute left-4 md:left-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md"
         onClick={prevTestimonial}
       >
         <svg
@@ -84,7 +85,7 @@ const Testimonials = () => {
         </svg>
       </button>
       <button
-        className="absolute md:right-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md "
+        className="absolute right-4 md:right-56 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md"
         onClick={nextTestimonial}
       >
         <svg

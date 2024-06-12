@@ -42,12 +42,12 @@ export default function NavBar() {
 
   return (
     <div className={theme === 'light' ? `bg-gray-100 bg-opacity-20` : ""}>
-      <nav className={`w-full fixed top-0 left-0 right-0 hover:bg-gray-100 hover:text-black z-10 ${scrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'}`} style={{ transition: 'background-color 1s ease, color 1s ease' }}>
+      <nav className={`w-full fixed md:items-center md:h-24 top-0 left-0 right-0 hover:bg-gray-100 hover:text-black z-10 ${scrolled ? 'bg-gray-100 text-black' : 'bg-transparent text-white'}`} style={{ transition: 'background-color 1s ease, color 1s ease' }}>
         <div className="px-4 mx-auto lg:max-w-7xl">
-          <div className="flex justify-between items-center py-3">
+          <div className="flex justify-between items-center py-4 md:py-6">
             {/* LOGO */}
             <Link href="/">
-              <div className='flex gap-1 items-center'>
+              <div className='flex gap-1 font-bold items-center'>
                 <h2 className="text-2xl cursor-pointer italic">SAND</h2>
                 <span className='text-black'><img src="/images/icon.webp" className='fill-current' width={30} height={30} alt="" /></span>
                 <h2 className="text-2xl text-green-500 cursor-pointer"> BOX</h2>

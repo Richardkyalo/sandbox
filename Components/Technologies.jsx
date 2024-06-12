@@ -39,11 +39,6 @@ export default function Technologies() {
       { image: "./images/typescript.png", title: "Typescript.js", description: "Web application framework for Node.js" },
       { image: "./images/django.png", title: "Django", description: "Web framework for Python" }
     ],
-    "Artificial Intelligence": [
-      { image: "./images/tensorflow.png", title: "TensorFlow", description: "Open-source machine learning framework" },
-      { image: "./images/pytorch.png", title: "PyTorch", description: "Open-source machine learning library" },
-      { image: "./images/scikit-learn.png", title: "scikit-learn", description: "Machine learning library in Python" }
-    ]
   };
 
   // Function to handle click on technology link

@@ -1,18 +1,36 @@
-import { FaWhatsapp  } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
+import { FaAngleUp } from 'react-icons/fa';
 
 const ConversationButton = () => {
-  // Add your conversation logic here, such as opening a chat window
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleConversationClick = () => {
-    // Implement your logic to start a conversation
-    console.log("Clicked on conversation button");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <button
-      className="fixed bottom-8 right-8 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 focus:outline-none"
+      className={`fixed bottom-8 right-8 bg-transparent text-green-500 rounded-full p-3 shadow-lg focus:outline-none transition-opacity duration-300 ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      }`}
       onClick={handleConversationClick}
     >
-      <FaWhatsapp  className="text-lg" />
+      <FaAngleUp className="text-lg" />
     </button>
   );
 };

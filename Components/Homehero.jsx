@@ -21,10 +21,10 @@ export default function Services() {
                 <div className={showContent ? "transition-opacity duration-1000 ease-in opacity-100" : "opacity-0"}>
                 <div className="relative bg-gradient-to-b from-black flex flex-col h-screen">
                     <div className="text-white ml-12 mt-16 md:mt-48 rounded-lg">
-                        <h2 className='text-6xl text-green-500 mb-4 font-mono'>
-                            SandBox Software Company, <br /> <span className='text-4xl text-white'>Unlocking Infinite Possibilities</span>
+                        <h2 className='text-2xl md:text-6xl mt-24 md:mt-12 text-green-500 mb-4 font-mono'>
+                            SandBox Software Company, <br /> <span className='text-xl md:text-4xl text-white'>Unlocking Infinite Possibilities</span>
                         </h2>
-                        
+                        <div class="border border-gray-300 rounded px-4 py-2 border-green-500 outline-none w-64">
                         {showContent && (
                             <Typewriter className="text-2xl"
                                 options={{
@@ -36,11 +36,13 @@ export default function Services() {
                                     ],
                                     autoStart: true,
                                     loop: true,
-                                    cursor: ' ',
+                                    cursor: '|',
                                     delay: 50,
                                 }}
                             />
                         )}
+                        </div>
+                        
                         <button className={` mt-8 py-1 px-4 border-black rounded-full bg-green-500 text-white font-bold text-lg ${styles['animate-blink']}`}>
                             KARIBU
                         </button>
