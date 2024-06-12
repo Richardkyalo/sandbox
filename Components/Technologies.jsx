@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 // Card component for displaying technology cards
 function TechnologyCard({ image, title, description }) {
   return (
-    <div className="px-8 py-8">
-      <div className="py-8 px-6 mb-12 text-center rounded-2xl">
+    <div className="px-8">
+      <div className="px-6 text-center rounded-2xl">
         <img src={image} alt="" className="text-center w-12 h-12 mx-auto" />
         <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{title}</h3>
         <p className="text-gray-500">{description}</p>
@@ -60,15 +60,15 @@ export default function Technologies() {
   return (
     <>
       <div className="min-h-screen flex flex-col justify-center items-center">
-        <div className="text-black text-5xl text-center font-mono font-black">
-          <h2 className="mt-7">Technologies We Work With</h2>
+        <div className="text-black text-2xl text-center font-mono">
+          <h2 className="">Technologies We Work With</h2>
         </div>
         <div className="flex justify-center mt-4">
           <nav className="flex flex-wrap justify-center items-center w-full max-w-4xl">
             {Object.keys(technologyCards).map((technology) => (
               <button
                 key={technology}
-                className="text-lg font-semibold mr-4 mb-4 underline underline-offset-1 hover:text-green-500"
+                className="text-lg mr-4 mb-4 underline underline-offset-1 hover:text-green-500"
                 onClick={() => handleTechnologyClick(technology)}
               >
                 {technology}

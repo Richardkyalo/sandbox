@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import NavBar from "../Components/Navbar";
-// import Blog from "../Components/Blog";
+import BlogList from '@/Components/BlogList';
 import Technologies from "../Components/Technologies"
 import Footer from "../Components/Footer";
 import Homehero from "../Components/Homehero";
@@ -9,6 +9,7 @@ import Portifolio from "../Components/Portifolio"
 import ServiceCard from '../Components/ServicesCard'
 import Testimonials from "../Components/Testimonials"
 import ConversationButton from "../Components/ConversationButton"
+import About from "../Components/About"
 import { ThemeProvider } from "next-themes";
 import "../app/globals.css"
 
@@ -34,14 +35,10 @@ export default function Home() {
           <Technologies />
         </section>
         <section id="blog" className='animate-fadeIn'>
-          {/* <Blog /> */}
+        <BlogList />
         </section>
         <section id="about" className="text-center rounded-t-full animate-fadeIn">
-          {/* <About /> */}
-          {/* <ServicesCarousel services={services} /> */}
-        </section>
-        <section id="contact" className="h-screen text-center flex animate-fadeIn">
-          <h1 className="m-auto">Welcome to our Software Company</h1>
+           <About />
           {/* <ServicesCarousel services={services} /> */}
         </section>
         <Footer />

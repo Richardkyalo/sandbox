@@ -48,14 +48,14 @@ export default function NavBar() {
             {/* LOGO */}
             <Link href="/">
               <div className='flex gap-1 items-center'>
-                <h2 className="text-2xl font-bold cursor-pointer italic">SAND</h2>
+                <h2 className="text-2xl cursor-pointer italic">SAND</h2>
                 <span className='text-black'><img src="/images/icon.webp" className='fill-current' width={30} height={30} alt="" /></span>
-                <h2 className="text-2xl text-green-500 font-bold cursor-pointer"> BOX</h2>
+                <h2 className="text-2xl text-green-500 cursor-pointer"> BOX</h2>
               </div>
             </Link>
             {/* MENU ITEMS */}
             <div className={`hidden md:flex items-center space-x-6 ${navbar ? 'block' : 'hidden'}`}>
-              <ul className="flex font-bold font-2xl space-x-4">
+              <ul className="flex font-2xl space-x-4">
                 <li className='hover:text-green-500  cursor-pointer'>
                   <ScrollLink to="home" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">Home</ScrollLink>
                 </li>
@@ -77,14 +77,14 @@ export default function NavBar() {
                 <li className='hover:text-green-500 cursor-pointer'>
                   <ScrollLink to="about" smooth={true} duration={1000} onClick={toggleNavbar} spy={true} activeClass="text-green-500 underline">About</ScrollLink>
                 </li>
-                <li className='hover:text-green-500 flex flex-row items-center cursor-pointer'>
+                {/* <li className='hover:text-green-500 flex flex-row items-center cursor-pointer'>
                   <Phone />
                   <span className="ml-2"> {/* Add margin-left for space */}
-                    <ScrollLink to="contact" smooth={true} duration={1000} onClick={toggleNavbar}>
+                    {/* <ScrollLink to="contact" smooth={true} duration={1000} onClick={toggleNavbar}>
                       +254 743 457481
                     </ScrollLink>
-                  </span>
-                </li>
+                  </span> */}
+                {/* </li> */} 
 
               </ul>
             </div>

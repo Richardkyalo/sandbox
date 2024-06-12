@@ -38,11 +38,11 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center mb-24 relative">
-      <h1 className="text-4xl text-center font-mono mb-8">We develop enterprise-grade software solutions <br /> for businesses.</h1>
+    <div className="h-screen flex flex-col justify-center items-center relative">
+      <h1 className="text-2xl text-center font-mono mb-8">We develop enterprise-grade software solutions <br /> for businesses.</h1>
       <div className="text-center relative">
         <div className="max-w-lg mx-auto">
-          <blockquote className="text-2xl testimonial transition-opacity duration-1000">
+          <blockquote className="testimonial transition-opacity duration-1000">
             &quot;{testimonials[currentTestimonialIndex].message}&quot;
           </blockquote>
         </div>
