@@ -63,7 +63,7 @@ export default function Technologies() {
             {Object.keys(technologyCards).map((technology) => (
               <button
                 key={technology}
-                className="text-lg mr-4 mb-4 underline underline-offset-1 hover:text-green-500"
+                className="text-lg mr-4 mb-4 hover:text-green-500"
                 onClick={() => handleTechnologyClick(technology)}
               >
                 {technology}
