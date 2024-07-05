@@ -107,28 +107,28 @@ export default function NavBar() {
         {/* COLLAPSED NAVBAR FOR MOBILE */}
         <div className={`px-4 md:hidden  ${navbar ? 'block' : 'hidden'} `} >
           <ul className="flex flex-col mb-4 text-center space-y-4">
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300 '>
+            <li className='hover:text-green-500 cursor-pointer  '>
               <ScrollLink to="home" smooth={true} duration={1000} onClick={toggleNavbar}>Home</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="services" smooth={true} duration={1000} onClick={toggleNavbar}>Services</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="portfolio" smooth={true} duration={1000} onClick={toggleNavbar}>Portfolio</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="testimonials" smooth={true} duration={1000} onClick={toggleNavbar}>Testimonials</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="technology" smooth={true} duration={1000} onClick={toggleNavbar}>Technologies</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="blog" smooth={true} duration={1000} onClick={toggleNavbar}>Blog</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="about" smooth={true} duration={1000} onClick={toggleNavbar}>About</ScrollLink>
             </li>
-            <li className='hover:text-green-500 cursor-pointer border-b border-green-300'>
+            <li className='hover:text-green-500 cursor-pointer '>
               <ScrollLink to="contact" smooth={true} duration={1000} onClick={toggleNavbar}>Contacts</ScrollLink>
             </li>
           </ul>
